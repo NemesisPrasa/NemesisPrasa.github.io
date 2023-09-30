@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITZY Stats</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="pageStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">ITZYstats</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="stats.html">Stats</a>
+      <a href="#">Discrohraphy</a>
+      <a href="#">Gallery</a>
+    </nav>
+  </header>
+
+   <section id="dashboard">
+    <div id="dashTop">
+      <div class="topGraph">
+         <h1>"CAKE" mv Weekly Views</h1>
+         <div class="melonChart">
+           <canvas id="melonChart" ></canvas>
+         </div>
+         
+      </div>
+      <div class="topGraph">
+         <canvas id="barChart" width="400" height="200"></canvas>
+      </div>
+      
+    </div>
+    <div id="youtubeData">
+      <div id="firstRaw" >
+         <div class="container">
+          <h1>Official Music Videos</h1>
+          <table id="videoTable">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Title</th>
+                <th>View Count</th>
+                <th>Release Date</th>
+              </tr>
+            </thead>
+            <tbody id="videoTableBody">
+              <!-- Video data will be displayed here -->
+            </tbody>
+          </table>
+      </div>
+    
+         <div class="container">
+          <h1>Dance Performance</h1>
+          <table id="videoTable">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Title</th>
+                <th>View Count</th>
+                <th>Release Date</th>
+              </tr>
+            </thead>
+            <tbody id="performanceTableBody">
+              <!-- Video data will be displayed here -->
+            </tbody>
+          </table>
+    </div>
+      </div>
+    
+      <div id="secondRaw"> 
+        <div class="container">
+          <h1>Japanse Mv</h1>
+          <table id="videoTable">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Title</th>
+                <th>View Count</th>
+                <th>Release Date</th>
+              </tr>
+            </thead>
+            <tbody id="jpMvTableBody">
+              <!-- Video data will be displayed here -->
+            </tbody>
+          </table>
+        </div>
+        <div class="container">
+          <h1>Japanse Mv</h1>
+          <table id="videoTable">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Title</th>
+                <th>View Count</th>
+                <th>Release Date</th>
+              </tr>
+            </thead>
+            <tbody id="jpMvTableBody">
+              <!-- Video data will be displayed here -->
+            </tbody>
+          </table>
+        </div>
+        
+      </div>  
+     
+     
+    
+    </div>
+    <div id="spotifyData">
+      <div id="data-container">
+        <h1>Spotify Data</h1>
+        <table>
+            <thead>
+                <tr>
+                  <th>Index</th>
+                  <th>Title</th>
+                  <th>Daily Plays</th>
+                  <th>Total Plays</th>
+                </tr>
+            </thead>
+            <tbody id="data-body">
+                <!-- Data will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+    </div>
+    
+  </section>
+   <script src="chartData.js"></script>
+   <script src="youtubeData.js"></script>
+   <script src="sheet.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+</body>
+
+</html>
