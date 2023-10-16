@@ -64,7 +64,7 @@
 
 #firstRaw .container{
   min-width: 49%;
-  max-height:400px;
+  max-height:360px;
   overflow: auto;
   padding: 20px;
   border: 1px solid #2ae59d;
@@ -73,9 +73,17 @@
 
 }
 
+.container a{
+  color: #2ae59d;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
 #secondRaw .container{
   min-width: 49%;
-  max-height:300px;
+  max-height:320px;
   overflow: auto;
   padding: 20px;
   border: 1px solid #2ae59d;
@@ -89,6 +97,7 @@
   width: 100%;
   border-collapse: collapse;
   font-size:10px;
+  margin-bottom: 10px;
 }
 
 .container th,td{
