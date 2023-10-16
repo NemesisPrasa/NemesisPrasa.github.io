@@ -224,6 +224,50 @@ nav .toggle-btn {
   color: #2ae59d;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  height: 70px;
+}
+
+footer .social-icons{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+  list-style: none;
+
+  
+}
+
+footer .social-icons a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover{
+  color: #2ae59d;
+}
+
+footer .social-icons i{
+  transition: 0.1s;
+}
+
+.footer_left{
+  color: #2ae59d;
+  font-size: 15px;
+}
+
+
 @media (max-width:992px) {
   nav a {
     display: none;
