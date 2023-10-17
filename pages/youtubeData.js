@@ -31,14 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then((data) => {
                     if (data.items.length > 0) {
                         const video = data.items[0];
-                        const originalTitle = video.snippet.title; // Store the original title
-                        let truncatedTitle = originalTitle;
+                        const originalTitle = video.snippet.title;
+                        const reducedTitle =  originalTitle.replace(/itzy/gi, '').replace(/@/g, ''); // Store the original title
+                        let truncatedTitle = reducedTitle;
                         const viewCount = parseInt(video.statistics.viewCount, 10); // Parse view count as an integer
                         
                         const releaseDate = new Date(video.snippet.publishedAt).toLocaleDateString();
                         
-                        if (originalTitle.length > 25) {
-                            truncatedTitle = originalTitle.substring(0, 25) + '...';
+                        if (reducedTitle.length > 25) {
+                            truncatedTitle = reducedTitle.substring(0, 25) + '...';
                         }
                         addVideoData({ index, title: truncatedTitle, viewCount,  releaseDate });
 
@@ -101,14 +102,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then((data) => {
                     if (data.items.length > 0) {
                         const video = data.items[0];
-                        const originalTitle = video.snippet.title; // Store the original title
-                        let truncatedTitle = originalTitle;
+                        const originalTitle = video.snippet.title;
+                        const reducedTitle =  originalTitle.replace(/itzy/gi, '').replace(/@/g, ''); // Store the original title
+                        let truncatedTitle = reducedTitle;
                         const viewCount = parseInt(video.statistics.viewCount, 10); // Parse view count as an integer
                         
                         const releaseDate = new Date(video.snippet.publishedAt).toLocaleDateString();
                         
-                        if (originalTitle.length > 25) {
-                            truncatedTitle = originalTitle.substring(0, 25) + '...';
+                        if (reducedTitle.length > 25) {
+                            truncatedTitle = reducedTitle.substring(0, 25) + '...';
                         }
                         addVideoData({ index, title: truncatedTitle, viewCount,  releaseDate });
 
@@ -173,13 +175,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (data.items.length > 0) {
                         const video = data.items[0];
                         const originalTitle = video.snippet.title; // Store the original title
-                        let truncatedTitle = originalTitle;
+                        const reducedTitle =  originalTitle.replace(/itzy/gi, '').replace(/@/g, ''); // Store the original title
+                        let truncatedTitle = reducedTitle;
                         const viewCount = parseInt(video.statistics.viewCount, 10); // Parse view count as an integer
                         
                         const releaseDate = new Date(video.snippet.publishedAt).toLocaleDateString();
                         
-                        if (originalTitle.length > 25) {
-                            truncatedTitle = originalTitle.substring(0, 25) + '...';
+                        if (reducedTitle.length > 25) {
+                            truncatedTitle = reducedTitle.substring(0, 25) + '...';
                         }
                         addVideoData({ index, title: truncatedTitle, viewCount,  releaseDate });
 
@@ -245,13 +248,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (data.items.length > 0) {
                         const video = data.items[0];
                         const originalTitle = video.snippet.title; // Store the original title
-                        let truncatedTitle = originalTitle;
+                        const reducedTitle =  originalTitle.replace(/itzy/gi, '').replace(/@/g, ''); // Store the original title
+                        let truncatedTitle = reducedTitle;
                         const viewCount = parseInt(video.statistics.viewCount, 10); // Parse view count as an integer
                         
                         const releaseDate = new Date(video.snippet.publishedAt).toLocaleDateString();
                         
-                        if (originalTitle.length > 25) {
-                            truncatedTitle = originalTitle.substring(0, 25) + '...';
+                        if (reducedTitle.length > 25) {
+                            truncatedTitle = reducedTitle.substring(0, 25) + '...';
                         }
                         addVideoData({ index, title: truncatedTitle, viewCount,  releaseDate });
 
