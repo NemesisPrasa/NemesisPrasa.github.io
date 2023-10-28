@@ -20,7 +20,7 @@
 
 <body>
   <header>
-    <a href="#" class="logo">ITZYstats</a>
+    <a href="#" class="logo">Kstats</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="pages/stats.html">Stats</a>
@@ -40,19 +40,140 @@
   </header
 
   <section id="hero">
+    <div class="countdown">
+      <h1>ITZY 5th Anniv. Countdown</h1>
+      <div class="counter">
+        <div class="countdown-item">
+          <div id="days">00</div>
+          <div class="countdown-label">D</div>
+      </div>
+      <div class="countdown-item">
+          <div id="hours">00</div>
+          <div class="countdown-label">H</div>
+      </div>
+      <div class="countdown-item">
+          <div id="minutes">00</div>
+          <div class="countdown-label">Min</div>
+      </div>
+      <div class="countdown-item">
+          <div id="seconds">00</div>
+          <div class="countdown-label">Sec</div>
+      </div>
+      </div>
+    </div>
     <div id="container">
        <div id="hero-left">
-          <h1>ITZY's New Release</h1>
-          <p>ITZY's upcoming Japanese full-length album, <span>"Ringo,"</span> is set to make its debut on October 18, 2023, with the title track <span>"Ringo."</span> <br>Additionally, fans were treated to an early visual delight with the release of the <span>"Ringo"</span> music video on September 28, 2023, at 00:00 KST</p>
+          <h1>ITZY First Japanese Album</h1>
+          <p>On October 18, 2023, ITZY made a remarkable entrance into the Japanese music scene with <span>"RINGO,"</span> their first Japanese album. Featuring the captivating title track "RINGO" and "Sugar-holic," the album offers 11 electrifying tracks, including fresh originals, Japanese versions, and pre-releases. </br>In just one week, <span>"RINGO Album"</span> sold an impressive 24,780 copies, securing a spot on the Billboard Japan charts</p>
+          
+          
 
          <div class="ClickMeButton"><a href="https://youtu.be/K0xFPQ2CX5E" target="_blank" class="clickMe">Watch Here</a></div>
        </div>
       <div id="hero-right">
-          <img src="itzy-ringo.jpg">
+        
+      
+        <div class="slider">
+          <div class="list">
+            <div class="item">
+              <img src="front-images/image_1.jpg">
+            </div>
+            <div class="item">
+              <img src="front-images/image_2.jpg">
+            </div>
+            <div class="item">
+              <img src="front-images/image_3.jpg">
+            </div>
+            <div class="item">
+              <img src="front-images/image_4.jpg">
+            </div>
+            <div class="item">
+              <img src="front-images/image_5.jpg">
+            </div>
+          </div>
+        
+        <div class="buttons">
+          <button id="prev"><</button>
+          <button id="next">></button>
+        </div>
+        <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
        </div>
+      </div>
     </div>
    
     
+  </section>
+
+  <section id="Milestones">
+    <h1 class="mile_header">Nearest Milestones > <span>MV's on Youtube</span></h1> 
+    <div class="milestone">
+      <div class="mile_card" id="video1" >
+          <h1 id="video1-title"></h1>
+          <div class="thumb">
+            <img id="video1-thumbnail" src="" alt="Video Thumbnail" />
+          </div>
+          <div class="third">
+            <p id="video1-view-count"></p>
+            <p id="video1-next-milestone"></p>
+            <p id="video1-next-milestone-main"></p>
+          </div>
+        </div>
+      <div class="mile_card">
+        <div class="mile_card" id="video2" >
+          <h1 id="video2-title"></h1>
+          <div class="thumb">
+            <img id="video2-thumbnail" src="" alt="Video Thumbnail" />
+          </div>
+          
+          <div class="third">
+            <p id="video2-view-count"></p>
+            <p id="video2-next-milestone"></p>
+            <p id="video2-next-milestone-main"></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="mile_card">
+        <div class="mile_card" id="video3" >
+          <h1 id="video3-title"></h1>
+          <div class="thumb">
+            <img id="video3-thumbnail" src="" alt="Video Thumbnail" />
+          </div>
+          <div class="third">
+            <p id="video3-view-count"></p>
+            <p id="video3-next-milestone"></p>
+            <p id="video3-next-milestone-main"></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="mile_card">
+        <div class="mile_card" id="video4" >
+          <h1 id="video4-title"></h1>
+          <div class="thumb">
+            <img id="video4-thumbnail" src="" alt="Video Thumbnail" />
+          </div>
+          <div class="third">
+            <p id="video4-view-count"></p>
+            <p id="video4-next-milestone"></p>
+            <p id="video4-next-milestone-main"></p>
+          </div>
+        </div>
+
+      </div>
+
+  
+      
+  </div>
+
+  
+
   </section>
 
   <section id="stats">
@@ -72,7 +193,7 @@
   </section>
 
 
-
+  <script src="https://apis.google.com/js/api.js"></script>
   <script src="script.js"></script>
 </body>
 <footer>

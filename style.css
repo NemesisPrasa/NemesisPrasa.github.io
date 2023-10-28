@@ -109,7 +109,6 @@ nav .toggle-btn {
   margin: 50px auto 0 auto;
   padding: 20px;
   gap: 20px;
-  border-bottom: 1px solid #2ae59d;
 
 
 }
@@ -129,16 +128,16 @@ nav .toggle-btn {
 #container #hero-left p {
   color: #d9d3d3;
   font-size: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   line-height: 1.6;
-  padding-left: 40px;
   padding-right: 20px;
-  border-left: 2px solid #2ae59d;
+  text-align: justify;
 }
 
 #container #hero-left span {
   color: #2ae59d;
   font-size: 15px;
+  
 }
 
 #container #hero-left .ClickMeButton{
@@ -147,7 +146,6 @@ nav .toggle-btn {
   border-radius: 10px;
   justify-content: center;
   display: flex;
-  margin-left: 40px;
   transition: 0.1s;
 }
 
@@ -170,17 +168,211 @@ nav .toggle-btn {
 
 }
 
-
-
 #container #hero-right {
   width: 50%;
-  height: auto;
+  height: 100vh;
+
+
 }
 
-#container #hero-right img {
+.countdown{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  right: 7%;
+  color: #fff;
+  border: 1px solid #2ae59d;
+  border-radius: 5px;
+  padding: 10px 20px;
+  align-items: center;
+}
+.countdown h1{
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #2ae59d;
+  
+}
+
+.countdown .counter{
+    display: flex;
+    flex-direction: row;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.countdown-label {
+  font-size: 1rem;
+}
+
+
+#container #hero-right .slider{
+  width: 570px;
+  max-width: 100%;
+  margin: auto;
+  height: 50%;
+  position: relative;
+  top: 25%;
+  overflow: hidden;
+  
+}
+
+#container #hero-right .list{
+  position: absolute;
+  display: flex;
+  width: max-content;
+  top: 0;
+  left: 0;
+  transition: 1s;
+
+}
+
+#container #hero-right .list img{
+  width: 570px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+#container #hero-right .buttons{
+  position: absolute;
+  top: 45%;
+  width: 90%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#container #hero-right .buttons button{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #524969;
+  color: #2ae59d;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#container #hero-right .dots{
+  position: absolute;
+  bottom: 10px;
+  color: #524969;
+  left: 0;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#container #hero-right .dots li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #2ae59d;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 1s;
+  cursor: pointer;
+
+}
+
+#container #hero-right .dots li.active{
+  width: 30px;
+}
+
+
+.mile_header{
+  font-size: 1rem;
+  background-color: #279c6f;
+  width: fit-content;
+  padding: 5px 10px;
+  margin-left:5%;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+
+
+}
+
+.mile_header span{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.milestone{
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid #2ae59d;
+  margin-bottom: 20px;
+}
+
+.milestone .mile_card{
+  width: 250px;
+  height: 280px;
+  border: 1px solid #2ae59d;
   border-radius: 10px;
-  box-shadow: 3px 3px 5px 3px rgba(42, 229, 157, 0.3)
+  background-color: #524969;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+.milestone .mile_card h1{
+  font-size: 0.9rem;
+  padding: 10px;
+  margin: 0 auto;
+  color: #2ae59d;
+
+}
+
+.milestone .mile_card .thumb{
+  width: 250px;
+  height: 130px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  display: flex;
+   
+}
+
+.milestone .mile_card .thumb img{
+  width: 200%;  
+}
+
+.milestone .mile_card .third{
+  font-size: 0.8rem;
+  color: #fff;
+  margin: auto;
+ 
+}
+.milestone .mile_card .third p{
+  padding: 5px;
+  text-align: center;
 }
 
 #stats {
@@ -195,6 +387,7 @@ nav .toggle-btn {
 
 
 }
+
 
 #stats .cards {
   min-width: 25%;
@@ -297,9 +490,9 @@ footer .social-icons i{
   }
   #container {
   width: 90%;
-  height: auto;
+  height: 100vh;
   flex-direction: column;
-  margin: 60px auto 0 auto;
+  margin: o auto 0 auto;
   padding: 10px;
   border-bottom:none;
 
@@ -307,6 +500,7 @@ footer .social-icons i{
   #container #hero-left {
   width: 100%;
   height: auto;
+  margin-top: 80px;
 
 }
 
@@ -325,16 +519,6 @@ footer .social-icons i{
   font-size: 26px;
 }
 
-#container #hero-right {
-  width: 100%;
-  height: auto;
-}
-
-#container #hero-right img {
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgba(42, 229, 157, 0.1)
-}
 #container #hero-left .ClickMeButton{
     width: 40%;
     margin-left:30px;
@@ -346,6 +530,31 @@ footer .social-icons i{
   color: #2ae59d;
   font-size: 25px;
 }
+#container #hero-right {
+  width: 100%;
+  height: 50%;
+
+
+}
+
+#container #hero-right .slider{
+  width: 100%;
+  margin: auto;
+  height: 80%;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  
+}
+
+#container #hero-right .list img{
+  width: 900px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
 
 }
 
@@ -358,10 +567,26 @@ footer .social-icons i{
    header {
     padding: 10px;
   }
+
+  .countdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    font-size: 1rem;
+    margin-top: 25px;
+    left: 30%;
+    color: #fff;
+    border: 1px solid #2ae59d;
+    border-radius: 5px;
+    padding: 10px 20px;
   
+  }
+
   #container {
   width: 100%;
-  height: auto;
+  height: 80vh;
   flex-direction: column;
   margin: 60px auto 0 auto;
   padding: 10px;
@@ -371,6 +596,7 @@ footer .social-icons i{
   #container #hero-left {
   width: 100%;
   height: auto;
+  margin-top: 110px;
 
 }
 
@@ -389,16 +615,34 @@ footer .social-icons i{
   font-size: 22px;
 }
 
-#container #hero-right {
+#container #hero-right .slider{
   width: 100%;
-  height: auto;
+  margin: auto;
+  height: 90%;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  
 }
 
-#container #hero-right img {
-  width: 100%;
+#container #hero-right .list img{
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px 2px rgba(42, 229, 157, 0.1)
+
 }
+
+#container #hero-right .buttons{
+  position: absolute;
+  top: 35%;
+  width: 90%;
+  left: 5%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
 
   
   #stats {
@@ -454,6 +698,48 @@ footer .social-icons i{
   font-size: 20px;
 }
 
+.mile_header{
+  font-size: 1.1rem;
+  margin-left:2.2%;
+}
+
+.mile_header span{
+  font-size: 1rem;
+}
+
+.milestone{
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milestone .mile_card{
+  width: 100%;
+  height: 320px;  
+}
+
+.milestone .mile_card h1{
+  font-size: 1.1rem;
+  padding: 10px;
+
+}
+
+.milestone .mile_card .thumb{
+  width: 100%;
+  height: 160px;
+  margin: 0 auto;
+   
+}
+
+.milestone .mile_card .thumb img{
+  width: 200%;  
+}
+
+.milestone .mile_card .third{
+  font-size: 1rem;
+ 
+}
+
 
 }
 @media (max-width:450px){
@@ -478,16 +764,23 @@ footer .social-icons i{
     color: #2ae59d;
     font-size: 12px;
   }
+
+  .countdown{
+    left: 22%;
+   }
+
   #container {
   margin: 70px auto 0 auto;
   padding: 10px;
   border-bottom:none;
+  height: 80vh;
 
 }
 
 #container #hero-left h1 {
   font-size: 25px;
   margin-bottom: 15px;
+  padding-left: 5px;
 }
 
 #container #hero-left p {
@@ -505,6 +798,25 @@ footer .social-icons i{
 #container #hero-left .clickMe {
   padding: 5px 100px;
   font-size: 20px;
+}
+
+#container #hero-right .slider{
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  height: 80%;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  
+}
+
+#container #hero-right .list img{
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+
 }
 
 
@@ -536,5 +848,47 @@ footer .social-icons i{
   padding: 5px;
   color: #2ae59d;
   font-size: 20px;
+}
+
+.mile_header{
+  font-size: 1.1rem;
+  margin-left:2.2%;
+}
+
+.mile_header span{
+  font-size: 1rem;
+}
+
+.milestone{
+  width: 95%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milestone .mile_card{
+  width: 100%;
+  height: 320px;  
+}
+
+.milestone .mile_card h1{
+  font-size: 1.1rem;
+  padding: 10px;
+
+}
+
+.milestone .mile_card .thumb{
+  width: 100%;
+  height: 160px;
+  margin: 0 auto;
+   
+}
+
+.milestone .mile_card .thumb img{
+  width: 200%;  
+}
+
+.milestone .mile_card .third{
+  font-size: 1rem;
+ 
 }
 }
