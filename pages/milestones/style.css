@@ -70,3 +70,105 @@
     padding: 5px;
     text-align: center;
   }
+
+  .container .head {
+    font-size: 22px;
+    color: rgba(248, 246, 250, 1);
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .container .head::after {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    background-image: linear-gradient(to right, rgba(42, 229, 157, 0.767), rgba(12, 155, 238, 0.747));
+  }
+
+
+
+  @media (max-width:576px){
+    .container{
+      width: 98%;
+      margin: 50px auto 0 auto;
+      padding: 10px;
+  }
+  
+.row{
+      flex-direction: column;
+      padding: 10px;
+      gap: 20px;
+  }
+  
+  .row .mile_card{
+      width: 300px;
+      height: 290px;
+      border: 1px solid #2ae59d;
+      border-radius: 10px;
+      background-color: #524969;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+      
+    }
+    
+    .row .mile_card h1{
+      font-size: 1rem;
+      padding: 10px;
+      margin: 0 auto;
+      color: #2ae59d;
+    
+    }
+    
+    .row .mile_card .thumb{
+      width: 300px;
+      height: 130px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      overflow: hidden;
+      display: flex;
+       
+    }
+    
+    .row .mile_card .thumb img{
+      width: 200%;  
+    }
+    
+    .row .mile_card .third{
+      font-size: 0.9rem;
+      color: #fff;
+      margin: auto;
+     
+    }
+    .row .mile_card .third p{
+      padding: 5px;
+      text-align: center;
+    }
+  
+    .container .head {
+      font-size: 22px;
+      color: rgba(248, 246, 250, 1);
+      position: relative;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .container .head::after {
+      content: " ";
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+      background-image: linear-gradient(to right, rgba(42, 229, 157, 0.767), rgba(12, 155, 238, 0.747));
+    }
+  
+
+  }
