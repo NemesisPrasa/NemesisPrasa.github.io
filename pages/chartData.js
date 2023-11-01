@@ -62,9 +62,9 @@ const chartConfig = {
 const melonChart = new Chart(document.getElementById('melonChart'), chartConfig);
 
 
-const weeks = ["week 1", "week 2", "week 3","week 4",];
-const song1Views = [1888778, 3343393, 4458110, 5619062 ];
-const song2Views = [3156190, 4601261, 5598061, 6455495 ];
+const weeks = ["week 1", "week 2", "week 3","week 4","week5"];
+const song1Views = [1888778, 3343393, 4458110, 5619062, 6595950 ];
+const song2Views = [3156190, 4601261, 5598061, 6455495, 7179480 ];
 
 // Get the canvas element and create a chart
 const ctx = document.getElementById("barChart").getContext("2d");
