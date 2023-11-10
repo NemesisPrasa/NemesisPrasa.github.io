@@ -1,6 +1,6 @@
 let SHEET_ID = '1LhUdsOoL6kBdYfyqgeeIXInB5weA_wjuG6FnVc5EX1E';
 let SHEET_TITLE = 'itzy spotify';
-let SHEET_RANGE = 'A1:B11,S1:S11';
+let SHEET_RANGE = 'A1:B11,AQ:AQ11';
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
