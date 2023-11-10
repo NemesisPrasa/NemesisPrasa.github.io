@@ -1,10 +1,10 @@
 
 const chartData = {
-  labels: ['08.06', '', '08.20', '','09.03','','09.17','','10.01', '', '10.15', '','10.29'],
+  labels: ['08.06', '', '08.20', '','09.03','','09.17','','10.01', '', '10.15', '','10.29',''],
   datasets: [
     {
       label: 'YouTube',
-      data: [ 13127188,5390059,5795033,4922844,4383899,3411742,3146415,3143665,3042911, 2724364, 2350337, 2171112, 2108433],
+      data: [ 13127188,5390059,5795033,4922844,4383899,3411742,3146415,3143665,3042911, 2724364, 2350337, 2171112, 2108433, 2033864],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -62,9 +62,9 @@ const chartConfig = {
 const melonChart = new Chart(document.getElementById('melonChart'), chartConfig);
 
 
-const weeks = ["week 1", "week 2", "week 3","week 4","week5"];
-const song1Views = [1888778, 3343393, 4458110, 5619062, 6595950 ];
-const song2Views = [3156190, 4601261, 5598061, 6455495, 7179480 ];
+const weeks = ["week 1", "week 2", "week 3","week 4","week5", "week6"];
+const song1Views = [1888778,1454615,1114717,1160952,976888,830928];
+const song2Views = [3156190, 1445071, 996800, 857434, 723985, 710214];
 
 // Get the canvas element and create a chart
 const ctx = document.getElementById("barChart").getContext("2d");
