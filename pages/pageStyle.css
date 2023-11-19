@@ -36,13 +36,23 @@
   justify-content:left;
 }
 
-#youtubeData, #spotifyData{
+#youtubeData{
   width:90%;
   height:auto;
   margin:0px auto;
   display:flex;
   padding:0;
   flex-direction: column;    
+}
+
+#spotifyData{
+  width:95%;
+  height:auto;
+  margin:0px auto;
+  display:flex;
+  padding:0;
+  flex-direction: row; 
+  justify-content: space-;   
 }
 
 #firstRaw{
@@ -130,10 +140,11 @@
 
 
 #data-container {
-  width: 100%;
+  max-width: 49%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 5px;
+  gap: 20px;
   border: 1px solid #2ae59d;
 }
 
