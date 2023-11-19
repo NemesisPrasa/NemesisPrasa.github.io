@@ -285,3 +285,75 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize the process
     fetchAndSortVideoDataJpMv(videoIdsJpDance);
 });
+
+
+const videoIdSpecial = ["xwN0IcPegIg", "qN2bbg2kuHw", "fvTHBV0XIIk", "-3J9LsmImRY", "BxZSa6rcctU"];
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Your YouTube Data API Key
+   
+
+    // Array of specific video IDs you want to fetch data for
+    // Add your video IDs here
+
+    // Function to fetch video data for specific video IDs and sort by view count
+    function fetchAndSortVideoDataSpecial(videoIdSpecial) {
+        const tableBody = document.getElementById("SpecialTableBody");
+
+        // Create an array to store video data
+        const videosData = [];
+
+        // Function to add video data to the array
+        function addVideoData(videoData) {
+            if (videoData) {
+                videosData.push(videoData);
+            }
+        }
+
+        videoIdSpecial.forEach((videoId, index) => {
+            fetch(
+                `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoId}&key=${apiKey}`
+            )
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.items.length > 0) {
+                        const video = data.items[0];
+                        const originalTitle = video.snippet.title; // Store the original title
+                        const reducedTitle =  originalTitle.replace(/itzy/gi, '').replace(/@/g, ''); // Store the original title
+                        let truncatedTitle = reducedTitle;
+                        const viewCount = parseInt(video.statistics.viewCount, 10); // Parse view count as an integer
+                        
+                        const releaseDate = new Date(video.snippet.publishedAt).toLocaleDateString();
+                        
+                        if (reducedTitle.length > 25) {
+                            truncatedTitle = reducedTitle.substring(0, 25) + '...';
+                        }
+                        addVideoData({ index, title: truncatedTitle, viewCount,  releaseDate });
+
+                        // Check if all videos have been fetched
+                        if (videosData.length === videoIdSpecial.length) {
+                            // Sort videos by view count in descending order
+                            videosData.sort((a, b) => b.viewCount - a.viewCount);
+
+                            // Display sorted videos in the table
+                           videosData.forEach((videoData, newIndex) => {
+                                const row = document.createElement("tr");
+                                row.innerHTML = `<td>${newIndex + 1}</td>
+                                                 <td>${videoData.title}</td>
+                                                 <td>${videoData.viewCount.toLocaleString()}</td>
+                                                 
+                                                 <td>${videoData.releaseDate}</td>`;
+
+                                tableBody.appendChild(row);
+                            });
+                        }
+                    }
+                })
+                .catch((error) => console.error(`Error fetching data for video ${videoId}: `, error));
+        });
+    }
+
+    // Initialize the process
+    fetchAndSortVideoDataSpecial(videoIdSpecial);
+});
