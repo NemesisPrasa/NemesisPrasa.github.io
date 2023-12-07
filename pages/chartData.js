@@ -1,10 +1,10 @@
 
 const chartData = {
-  labels: ['08.06', '', '08.20', '','09.03','','09.17','','10.01', '', '10.15', '','10.29','', '11.11', ''],
+  labels: ['Aug', 'Sap', 'Oct', 'Nov',],
   datasets: [
     {
       label: 'YouTube',
-      data: [ 13127188,5390059,5795033,4922844,4383899,3411742,3146415,3143665,3042911, 2724364, 2350337, 2171112, 2108433, 2033864, 1727751, 1589474],
+      data: [ 34827985, 49022166, 59369779, 66390272],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -23,6 +23,7 @@ const chartConfig = {
   data: chartData,
   options: {
     legend: {
+      display: false,
       tooltips: {
       enabled: false, // Set this to false to hide tooltips
     },
@@ -39,16 +40,20 @@ const chartConfig = {
         title: {
           display: false,
           text: 'Time Period',
+          align: 'end',
         },
         ticks: {
-          color: 'white', // Change the X axis labels color
+          color: 'white',
+          align: 'end', // Change the X axis labels color
         },
       },
       y: {
         display: true,
         title: {
           display: false,
+          align: 'center',
           text: 'Daily Views',
+          
         },
         ticks: {
           color: 'white', // Change the Y axis labels color
@@ -61,10 +66,12 @@ const chartConfig = {
 
 const melonChart = new Chart(document.getElementById('melonChart'), chartConfig);
 
-
+/*
 const weeks = ["week 1", "week 2", "week 3","week 4","week5", "week6"];
 const song1Views = [1888778,1454615,1114717,1160952,976888,830928];
 const song2Views = [3156190, 1445071, 996800, 857434, 723985, 710214];
+
+
 
 // Get the canvas element and create a chart
 const ctx = document.getElementById("barChart").getContext("2d");
@@ -87,6 +94,58 @@ const barChart = new Chart(ctx, {
                 borderColor: "rgba(255, 99, 132, 1)",
                 borderWidth: 1
             }
+        ]
+    },
+    options: {
+        scales: {
+      x: {
+        display: true,
+        title: {
+          display: false,
+          text: 'Time Period',
+        },
+        ticks: {
+          color: 'white', // Change the X axis labels color
+        },
+      },
+      y: {
+        display: true,
+        title: {
+          display: false,
+          text: 'Daily Views',
+        },
+        ticks: {
+          color: 'white', // Change the Y axis labels color
+        },
+        min: 0,
+      },
+    },
+    }
+});
+
+*/
+
+
+const weeks = ["Aug", "Sap", "Oct","Nov",];
+const song1Views = [34827985, 14194181, 10347613, 7020493,];
+
+
+
+// Get the canvas element and create a chart
+const ctx = document.getElementById("barChart").getContext("2d");
+const barChart = new Chart(ctx, {
+    type: "bar",
+    data: {
+        labels: weeks,
+        datasets: [
+            {
+                label: "Youtube",
+                data: song1Views,
+                backgroundColor: "rgba(75, 192, 192, 0.6)",
+                borderColor: "rgba(75, 192, 192, 1)",
+                borderWidth: 1
+            }
+            
         ]
     },
     options: {
