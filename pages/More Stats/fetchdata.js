@@ -1,6 +1,6 @@
 const apiKey = "AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E";
 
-const videoIdsMv = ["OSRMoNKftyk", "4R7vRFGJr3k", "0bIRwBpBcZQ", "FcQ6oB1JPiA", "RmTq3cJqyCo", "zugAhfd2r0g", "6uZy86ePgO0", "Hbb5GPxXF1w", "9oyodEkzn94", "MjCZfZfucEc", "mCPkvzVLdHE", "_ysomCGaZLw", "Ho_SmopuDlQ", "hed6HkYNA7g", "tvTdg7sgsgU", "wTowEKjDGkU", "fE2h3lGlOsk", "zndvqTc4P9I", "pNfTK39k55U", "OB7HVOCo6oQ", "6rc_R5XvT3Q","FOdhJlOxxFM", "aASPZ-QdXMo", "D2i1qbS2V90", "kLUKXX0sfII", "H-1B9w4uxHc", "rZ57I4cSSBE", "dnXyghQd2O8"];
+const videoIdsMv = ["z75GlxXEfZk", "OSRMoNKftyk", "4R7vRFGJr3k", "0bIRwBpBcZQ", "FcQ6oB1JPiA", "RmTq3cJqyCo", "zugAhfd2r0g", "6uZy86ePgO0", "Hbb5GPxXF1w", "9oyodEkzn94", "MjCZfZfucEc", "mCPkvzVLdHE", "_ysomCGaZLw", "Ho_SmopuDlQ", "hed6HkYNA7g", "tvTdg7sgsgU", "wTowEKjDGkU", "fE2h3lGlOsk", "zndvqTc4P9I", "pNfTK39k55U", "OB7HVOCo6oQ", "6rc_R5XvT3Q","FOdhJlOxxFM", "aASPZ-QdXMo", "D2i1qbS2V90", "kLUKXX0sfII", "H-1B9w4uxHc", "rZ57I4cSSBE", "dnXyghQd2O8"];
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your YouTube Data API Key
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const videoIdsKpopDance = ["UUUWIGx3hDE", "G_Lhkhxl8BU", "IOKMx1jeCjY", "ay97L0DAu9A", "lMC6_j37TLE", "mBvdwhgyqVY", "mr16aEZ7f4U","rZAkkGtntbQ", "xGSscNoySuw", "cFxce4OPmLE", "jr9lqsHUS-o", "FboYnkH_73s", "9-8SO8siAWI", "aYi7hHWG7zw", "rPNflM1zUls", "Q-CYEtcBtDc", "acksIpuXN9Q", "d7ZvOX8qZlc", "1Nu_tw9rLOA", "WfMHIJ-mkBQ", "IfBSeP-qhVM", "fNc43M1_TPU", "L4fRGgARiKw", "72xTFQgLl7I", "LSSe3eMkxvk" ,"W4rs-76SgRA", "TrGOcSlL37c", "4zwHs2QMvzY", "s5DNhleLGKY", "pccskexpmIE", "qG17qAvLNRI", "LrtC4IQYaCg", "DxPNHmdEAUY", "PqAjjyZvPJc","IZAv5Tj8a8A","b80TWrBflh8","Vp9I_m6znMM","r7ZZCKmX2OI","tcrRXkxUj0U"];
+const videoIdsKpopDance = ["zip9_rpK8dA", "UUUWIGx3hDE", "G_Lhkhxl8BU", "IOKMx1jeCjY", "ay97L0DAu9A", "lMC6_j37TLE", "mBvdwhgyqVY", "mr16aEZ7f4U","rZAkkGtntbQ", "xGSscNoySuw", "cFxce4OPmLE", "jr9lqsHUS-o", "FboYnkH_73s", "9-8SO8siAWI", "aYi7hHWG7zw", "rPNflM1zUls", "Q-CYEtcBtDc", "acksIpuXN9Q", "d7ZvOX8qZlc", "1Nu_tw9rLOA", "WfMHIJ-mkBQ", "IfBSeP-qhVM", "fNc43M1_TPU", "L4fRGgARiKw", "72xTFQgLl7I", "LSSe3eMkxvk" ,"W4rs-76SgRA", "TrGOcSlL37c", "4zwHs2QMvzY", "s5DNhleLGKY", "pccskexpmIE", "qG17qAvLNRI", "LrtC4IQYaCg", "DxPNHmdEAUY", "PqAjjyZvPJc","IZAv5Tj8a8A","b80TWrBflh8","Vp9I_m6znMM","r7ZZCKmX2OI","tcrRXkxUj0U"];
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your YouTube Data API Key
