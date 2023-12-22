@@ -6,11 +6,24 @@
   align-items:center;
   justify-content: space-between;
   margin: 50px auto 0 auto;
+  padding:20px 0 0 0;
+  gap: 20px;
+}
+
+#dashSecond{
+  width: 90%;
+  height: auto;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-between;
+  margin: 0 auto;
   padding:20px 0;
+  gap: 20px;
 }
 
 
-#dashTop .topGraph{
+#dashTop .topGraph, #dashSecond .topGraph{
   min-width: 49%;
   min-height: 330px;
   border-radius: 5px;
@@ -24,12 +37,12 @@
   
 }
 
-#dashTop .topGraph .melonChart {
+#dashTop .topGraph .melonChart, #dashSecond .topGraph .ChartBornToBe {
   height: auto;
   width: 95%;
 }
 
-#dashTop .topGraph h1{
+#dashTop .topGraph h1, #dashSecond .topGraph h1{
   color:#fff;
   font-size:15px;
   align-items:left;
@@ -184,9 +197,18 @@
     padding:20px 0;
     gap:10px;
   }
+  #dashSecond{
+    width: 95%;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin: 50px auto 0 auto;
+    padding:20px 0;
+    gap:10px;
+  }
   
-  
-  #dashTop .topGraph{
+  #dashTop .topGraph, #dashSecond .topGraph{
     min-width: 100%;
     min-height:200px; 
     border-radius: 5px;
@@ -200,11 +222,11 @@
     
   }
   
-  #dashTop .topGraph .melonChart {
+  #dashTop .topGraph .melonChart, #dashSecond .topGraph .ChartBornToBe {
     height: 170px;
     width: 100%;
   }
-  #dashTop .topGraph h1{
+  #dashTop .topGraph h1,   #dashSecond .topGraph h1{
     color:#fff;
     font-size:10px;
     top:0;
