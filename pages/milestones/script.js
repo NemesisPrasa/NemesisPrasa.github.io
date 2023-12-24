@@ -12,14 +12,14 @@ gapi.load('client', () => {
         { videoId: 'fE2h3lGlOsk', dailyViews: 123000, milestoneViews: 530000000, mainMileViews:600000000, divId: 'video1' ,NextMile:'Est. Date for 530M ~ ', NextMileMain:'Est. Date for 600M ~ '},
         { videoId: 'MjCZfZfucEc', dailyViews: 51000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video10' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: 'zugAhfd2r0g', dailyViews: 66000, milestoneViews: 150000000, mainMileViews:200000000, divId: 'video8' ,NextMile:'Est. Date for 150M ~ ', NextMileMain:'Est. Date for 200M ~ '},
-        { videoId: '_ysomCGaZLw', dailyViews: 45000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video4' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
+        { videoId: '_ysomCGaZLw', dailyViews: 45000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video3' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: 'wTowEKjDGkU', dailyViews: 17000, milestoneViews: 210000000, mainMileViews:300000000, divId: 'video11' ,NextMile:'Est. Date for 210M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: 'Hbb5GPxXF1w', dailyViews: 28000, milestoneViews: 150000000, mainMileViews:200000000, divId: 'video13' ,NextMile:'Est. Date for 150M ~ ', NextMileMain:'Est. Date for 200M ~ '},
         { videoId: 'pNfTK39k55U', dailyViews: 23000, milestoneViews: 330000000, mainMileViews:400000000, divId: 'video15' ,NextMile:'Est. Date for 330M ~ ', NextMileMain:'Est. Date for 400M ~ '},
         { videoId: 'zndvqTc4P9I', dailyViews: 15000, milestoneViews: 270000000, mainMileViews:300000000, divId: 'video6' ,NextMile:'Est. Date for 270M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: '4R7vRFGJr3k', dailyViews: 400000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video2' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
-        { videoId: 'OSRMoNKftyk', dailyViews: 300000, milestoneViews: 5000000, mainMileViews:10000000, divId: 'video3' ,NextMile:'Est. Date for 5M ~ ', NextMileMain:'Est. Date for 10M ~ '},
-        { videoId: 'z75GlxXEfZk', dailyViews: 300000, milestoneViews: 5000000, mainMileViews:10000000, divId: 'video5' ,NextMile:'Est. Date for 5M ~ ', NextMileMain:'Est. Date for 10M ~ '},
+        { videoId: 'OSRMoNKftyk', dailyViews: 150000, milestoneViews: 5000000, mainMileViews:10000000, divId: 'video4' ,NextMile:'Est. Date for 5M ~ ', NextMileMain:'Est. Date for 10M ~ '},
+        { videoId: 'z75GlxXEfZk', dailyViews: 150000, milestoneViews: 5000000, mainMileViews:10000000, divId: 'video5' ,NextMile:'Est. Date for 5M ~ ', NextMileMain:'Est. Date for 10M ~ '},
 
         
         // Add more video data objects as needed
