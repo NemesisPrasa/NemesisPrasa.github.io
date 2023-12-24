@@ -177,11 +177,11 @@ const barChart = new Chart(ctx, {
 
 
 const chartDataBornToBe = {
-  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24'],
+  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24', '12.25'],
   datasets: [
     {
       label: 'BTB',
-      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764],
+      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764, 7713969],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -192,7 +192,7 @@ const chartDataBornToBe = {
 
     {
       label: 'COMH',
-      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230],
+      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230, 2610541],
       borderColor: '#ff6384',   // Green color for the line
       backgroundColor: 'rgba(255, 99, 132, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -203,7 +203,7 @@ const chartDataBornToBe = {
 
     {
       label: 'Run Away',
-      data: [0, 0, 0, 0, 0, 898707, 1288236],
+      data: [0, 0, 0, 0, 0, 898707, 1288236, 1451521],
       borderColor: '#f5ee27',   // Green color for the line
       backgroundColor: 'rgba(245, 238, 39, 0.8)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -269,7 +269,7 @@ const BornToBe = new Chart(document.getElementById('ChartBornToBe'), chartConfig
 const days = ["D1", "D2", "D3", "D4"];
 const BTBViews = [3265045,1401804, 876542, 607160];
 const COMHViews = [1379206, 450238, 360098, 209618];
-const RAViews = [898707, 389529, 0, 0];
+const RAViews = [898707, 389529, 163285, 0];
 
 
 
