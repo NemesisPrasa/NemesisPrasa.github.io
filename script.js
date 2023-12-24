@@ -82,7 +82,7 @@ gapi.load('client', () => {
     // List of video data objects with video IDs, daily views, milestones, and div IDs
     const videos = [
       { videoId: '4R7vRFGJr3k', dailyViews: 400000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video3' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
-      { videoId: 'OSRMoNKftyk', dailyViews: 400000, milestoneViews: 5000000, mainMileViews:10000000, divId: 'video2' ,NextMile:'Est. Date for 5M ~ ', NextMileMain:'Est. Date for 10M ~ '},
+      { videoId: 'OSRMoNKftyk', dailyViews: 200000, milestoneViews: 5000000, mainMileViews:10000000, divId: 'video2' ,NextMile:'Est. Date for 5M ~ ', NextMileMain:'Est. Date for 10M ~ '},
       { videoId: 'fE2h3lGlOsk', dailyViews: 123000, milestoneViews: 530000000, mainMileViews:600000000, divId: 'video1' ,NextMile:'Est. Date for 530M ~ ', NextMileMain:'Est. Date for 600M ~ '},
       { videoId: '_ysomCGaZLw', dailyViews: 45000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video4' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
 
