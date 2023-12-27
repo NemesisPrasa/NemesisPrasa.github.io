@@ -177,11 +177,11 @@ const barChart = new Chart(ctx, {
 
 
 const chartDataBornToBe = {
-  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24', '12.25'],
+  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24', '12.25', '12.26'],
   datasets: [
     {
       label: 'BTB',
-      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764, 7713969],
+      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764, 7713969, 8103857],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -192,7 +192,7 @@ const chartDataBornToBe = {
 
     {
       label: 'COMH',
-      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230, 2610541],
+      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230, 2610541, 2778744],
       borderColor: '#ff6384',   // Green color for the line
       backgroundColor: 'rgba(255, 99, 132, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -203,9 +203,20 @@ const chartDataBornToBe = {
 
     {
       label: 'Run Away',
-      data: [0, 0, 0, 0, 0, 898707, 1288236, 1451521],
+      data: [0, 0, 0, 0, 0, 898707, 1288236, 1451521, 1613435],
       borderColor: '#f5ee27',   // Green color for the line
       backgroundColor: 'rgba(245, 238, 39, 0.8)',   // Green fill with transparency
+      borderWidth: 1.5,           // Adjust the line thickness
+      fill: false,               // Fill the area under the line
+      tension: 0.4,
+      pointRadius: 0,// Adjust the line curve (0 is straight, 1 is very curved)
+    },
+
+    {
+      label: 'Mine',
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 744548],
+      borderColor: '#dbebea',   // Green color for the line
+      backgroundColor: 'rgba(219, 235, 234, 0.8)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
       fill: false,               // Fill the area under the line
       tension: 0.4,
@@ -269,7 +280,8 @@ const BornToBe = new Chart(document.getElementById('ChartBornToBe'), chartConfig
 const days = ["D1", "D2", "D3", "D4"];
 const BTBViews = [3265045,1401804, 876542, 607160];
 const COMHViews = [1379206, 450238, 360098, 209618];
-const RAViews = [898707, 389529, 163285, 0];
+const RAViews = [898707, 389529, 163285, 161914];
+const MineViews = [744548,0,0,0 ];
 
 
 
@@ -295,12 +307,19 @@ const barChartBTB = new Chart(ctxBTB, {
               borderWidth: 1
           },
           {
-            label: "Run Away",
-            data: RAViews,
-            backgroundColor: "rgba(245, 238, 39, 0.6)",
-            borderColor: "rgba(245, 238, 39, 1)",
-            borderWidth: 1
-        }
+                label: "Run Away",
+                data: RAViews,
+                backgroundColor: "rgba(245, 238, 39, 0.6)",
+                borderColor: "rgba(245, 238, 39, 1)",
+                borderWidth: 1
+            },
+            {
+              label: "Mine",
+              data: MineViews,
+              backgroundColor: "rgba(219, 235, 234, 0.6)",
+              borderColor: "rgba(219, 235, 234, 1)",
+              borderWidth: 1
+          }
             
         ]
     },
