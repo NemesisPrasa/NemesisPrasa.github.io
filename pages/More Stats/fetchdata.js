@@ -1,6 +1,6 @@
 const apiKey = "AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E";
 
-const videoIdsMv = ["HnXCezrJEdM","z75GlxXEfZk", "OSRMoNKftyk", "4R7vRFGJr3k", "0bIRwBpBcZQ", "FcQ6oB1JPiA", "RmTq3cJqyCo", "zugAhfd2r0g", "6uZy86ePgO0", "Hbb5GPxXF1w", "9oyodEkzn94", "MjCZfZfucEc", "mCPkvzVLdHE", "_ysomCGaZLw", "Ho_SmopuDlQ", "hed6HkYNA7g", "tvTdg7sgsgU", "wTowEKjDGkU", "fE2h3lGlOsk", "zndvqTc4P9I", "pNfTK39k55U", "OB7HVOCo6oQ", "6rc_R5XvT3Q","FOdhJlOxxFM", "aASPZ-QdXMo", "D2i1qbS2V90", "kLUKXX0sfII", "H-1B9w4uxHc", "rZ57I4cSSBE", "dnXyghQd2O8"];
+const videoIdsMv = ["1843Q679cvg","HnXCezrJEdM","z75GlxXEfZk", "OSRMoNKftyk", "4R7vRFGJr3k", "0bIRwBpBcZQ", "FcQ6oB1JPiA", "RmTq3cJqyCo", "zugAhfd2r0g", "6uZy86ePgO0", "Hbb5GPxXF1w", "9oyodEkzn94", "MjCZfZfucEc", "mCPkvzVLdHE", "_ysomCGaZLw", "Ho_SmopuDlQ", "hed6HkYNA7g", "tvTdg7sgsgU", "wTowEKjDGkU", "fE2h3lGlOsk", "zndvqTc4P9I", "pNfTK39k55U", "OB7HVOCo6oQ", "6rc_R5XvT3Q","FOdhJlOxxFM", "aASPZ-QdXMo", "D2i1qbS2V90", "kLUKXX0sfII", "H-1B9w4uxHc", "rZ57I4cSSBE", "dnXyghQd2O8"];
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your YouTube Data API Key
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const videoIdsKpopSpecial = ["xwN0IcPegIg", "qN2bbg2kuHw", "fvTHBV0XIIk", "-3J9LsmImRY", "BxZSa6rcctU" , "HuXnf-x7UeM", "ra27BWdRpm4", "pXmKW5zXWyc", "sMs4gK8jr-c", "UdiaQcAjzT0", "tnMFp53wrRg", "4kwkLBnc4fE", "msSTlqos4fQ"];
+const videoIdsKpopSpecial = ["YX7aPu5R8-0", "_alufwVmO_E", "j3pL15ypMWM","xwN0IcPegIg", "qN2bbg2kuHw", "fvTHBV0XIIk", "-3J9LsmImRY", "BxZSa6rcctU" , "HuXnf-x7UeM", "ra27BWdRpm4", "pXmKW5zXWyc", "sMs4gK8jr-c", "UdiaQcAjzT0", "tnMFp53wrRg", "4kwkLBnc4fE", "msSTlqos4fQ"];
 
 document.addEventListener("DOMContentLoaded", function () {
     // Your YouTube Data API Key
