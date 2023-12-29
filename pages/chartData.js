@@ -177,11 +177,11 @@ const barChart = new Chart(ctx, {
 
 
 const chartDataBornToBe = {
-  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24', '12.25', '12.26'],
+  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24', '12.25', '12.26', '12.27', '12.28', '12.29'],
   datasets: [
     {
       label: 'BTB',
-      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764, 7713969, 8103857],
+      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764, 7713969, 8103857, 8426029, 8757176, 9089582],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -192,9 +192,9 @@ const chartDataBornToBe = {
 
     {
       label: 'COMH',
-      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230, 2610541, 2778744],
-      borderColor: '#ff6384',   // Green color for the line
-      backgroundColor: 'rgba(255, 99, 132, 0.3)',   // Green fill with transparency
+      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230, 2610541, 2778744, 2883571, 3049166, 3165093],
+      borderColor: '#f56a27',   // Green color for the line
+      backgroundColor: 'rgba(245, 106, 39, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
       fill: false,               // Fill the area under the line
       tension: 0.4,
@@ -203,9 +203,9 @@ const chartDataBornToBe = {
 
     {
       label: 'Run Away',
-      data: [0, 0, 0, 0, 0, 898707, 1288236, 1451521, 1613435],
+      data: [0, 0, 0, 0, 0, 898707, 1288236, 1451521, 1613435, 1753008, 1931050, 2047215],
       borderColor: '#f5ee27',   // Green color for the line
-      backgroundColor: 'rgba(245, 238, 39, 0.8)',   // Green fill with transparency
+      backgroundColor: 'rgba(245, 238, 39, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
       fill: false,               // Fill the area under the line
       tension: 0.4,
@@ -214,9 +214,20 @@ const chartDataBornToBe = {
 
     {
       label: 'Mine',
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 744548],
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 744548, 953713, 1182671, 1305335],
       borderColor: '#dbebea',   // Green color for the line
-      backgroundColor: 'rgba(219, 235, 234, 0.8)',   // Green fill with transparency
+      backgroundColor: 'rgba(219, 235, 234, 0.3)',   // Green fill with transparency
+      borderWidth: 1.5,           // Adjust the line thickness
+      fill: false,               // Fill the area under the line
+      tension: 0.4,
+      pointRadius: 0,// Adjust the line curve (0 is straight, 1 is very curved)
+    },
+
+    {
+      label: 'Yet,But',
+      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 934493, 1237452],
+      borderColor: '#ff3ca1',   // Green color for the line
+      backgroundColor: 'rgba(255, 60, 161, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
       fill: false,               // Fill the area under the line
       tension: 0.4,
@@ -281,7 +292,8 @@ const days = ["D1", "D2", "D3", "D4"];
 const BTBViews = [3265045,1401804, 876542, 607160];
 const COMHViews = [1379206, 450238, 360098, 209618];
 const RAViews = [898707, 389529, 163285, 161914];
-const MineViews = [744548,0,0,0 ];
+const MineViews = [744548,209165,228958,122664];
+const YetButViews = [934493, 302959,0,0];
 
 
 
@@ -302,8 +314,8 @@ const barChartBTB = new Chart(ctxBTB, {
             {
               label: "COMH",
               data: COMHViews,
-              backgroundColor: "rgba(255, 99, 132, 0.6)",
-                borderColor: "rgba(255, 99, 132, 1)",
+              backgroundColor: "rgba(245, 106, 39, 0.6)",
+                borderColor: "rgba(245, 106, 39, 1)",
               borderWidth: 1
           },
           {
@@ -319,7 +331,14 @@ const barChartBTB = new Chart(ctxBTB, {
               backgroundColor: "rgba(219, 235, 234, 0.6)",
               borderColor: "rgba(219, 235, 234, 1)",
               borderWidth: 1
-          }
+          },
+          {
+            label: "Yet,But",
+            data: YetButViews,
+            backgroundColor: "rgba(255, 60, 161, 0.6)",
+            borderColor: "rgba(255, 60, 161, 1)",
+            borderWidth: 1
+        }
             
         ]
     },
