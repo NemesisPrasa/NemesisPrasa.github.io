@@ -1,10 +1,10 @@
 
 const chartData = {
-  labels: ['Aug', 'Sap', 'Oct', 'Nov',],
+  labels: ['2023-08', '2023-09', '2023-10', '2023-11', '2023-12', '2024-01', '2024-02'],
   datasets: [
     {
       label: 'YouTube',
-      data: [ 34827985, 49022166, 59369779, 66390272],
+      data: [ 0,34827985, 49022166, 59369779, 66390272, 72120307, 76837256, 77814112],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -23,13 +23,13 @@ const chartConfig = {
   data: chartData,
   options: {
     legend: {
-      display: false,
+      display: true,
       tooltips: {
-      enabled: false, // Set this to false to hide tooltips
+      enabled: true, // Set this to false to hide tooltips
     },
       labels: {
         // Customize the legend label appearance
-        usePointStyle: false, // Do not use point style (square)
+        usePointStyle: true, // Do not use point style (square)
         fontColor: 'white', // Set the font color to match the line color
       },
     
@@ -126,8 +126,8 @@ const barChart = new Chart(ctx, {
 */
 
 
-const weeks = ["Aug", "Sap", "Oct","Nov",];
-const song1Views = [34827985, 14194181, 10347613, 7020493,];
+const weeks = ["Aug", "Sap", "Oct","Nov", "dec", "jan"];
+const song1Views = [34827985, 14194181, 10347613, 7020493, 5730035, 4715950];
 
 
 
@@ -177,11 +177,11 @@ const barChart = new Chart(ctx, {
 
 
 const chartDataBornToBe = {
-  labels: ['12.18','12.19', '12.20', '12.21', '12.22', '12.23', '12.24', '12.25', '12.26', '12.27', '12.28', '12.29'],
+  labels: ['2023-12 ','2024-01', '2024-02', ],
   datasets: [
     {
-      label: 'BTB',
-      data: [ 0, 3265045, 4666849, 5543391, 6150551, 6735411, 7249764, 7713969, 8103857, 8426029, 8757176, 9089582],
+      label: 'Born To Be',
+      data: [0, 10980120, 17360244, 18472149],
       borderColor: '#00ffb7',   // Green color for the line
       backgroundColor: 'rgba(0, 255, 183, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -191,8 +191,8 @@ const chartDataBornToBe = {
     },
 
     {
-      label: 'COMH',
-      data: [ 0, 0, 0, 1379276, 1829514, 2189612, 2399230, 2610541, 2778744, 2883571, 3049166, 3165093],
+      label: 'Untochable',
+      data: [ 0, 0, 11620351, 13056428	],
       borderColor: '#f56a27',   // Green color for the line
       backgroundColor: 'rgba(245, 106, 39, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
@@ -202,32 +202,10 @@ const chartDataBornToBe = {
     },
 
     {
-      label: 'Run Away',
-      data: [0, 0, 0, 0, 0, 898707, 1288236, 1451521, 1613435, 1753008, 1931050, 2047215],
+      label: 'Mr Vampire',
+      data: [0, 0, 8146516, 8743420],
       borderColor: '#f5ee27',   // Green color for the line
       backgroundColor: 'rgba(245, 238, 39, 0.3)',   // Green fill with transparency
-      borderWidth: 1.5,           // Adjust the line thickness
-      fill: false,               // Fill the area under the line
-      tension: 0.4,
-      pointRadius: 0,// Adjust the line curve (0 is straight, 1 is very curved)
-    },
-
-    {
-      label: 'Mine',
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 744548, 953713, 1182671, 1305335],
-      borderColor: '#dbebea',   // Green color for the line
-      backgroundColor: 'rgba(219, 235, 234, 0.3)',   // Green fill with transparency
-      borderWidth: 1.5,           // Adjust the line thickness
-      fill: false,               // Fill the area under the line
-      tension: 0.4,
-      pointRadius: 0,// Adjust the line curve (0 is straight, 1 is very curved)
-    },
-
-    {
-      label: 'Yet,But',
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 934493, 1237452],
-      borderColor: '#ff3ca1',   // Green color for the line
-      backgroundColor: 'rgba(255, 60, 161, 0.3)',   // Green fill with transparency
       borderWidth: 1.5,           // Adjust the line thickness
       fill: false,               // Fill the area under the line
       tension: 0.4,
