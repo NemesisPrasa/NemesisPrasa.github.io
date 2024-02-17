@@ -49,7 +49,7 @@ dots.forEach((li, key)=>{
 });
 
 // Set the date of the specific event (Itzy's fifth anniversary)
-const eventDate = new Date("2024-02-12T00:00:00Z").getTime();
+const eventDate = new Date("2024-04-17T00:00:00Z").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();

@@ -97,3 +97,64 @@ gapi.load('client', () => {
     viewCountElement.textContent = `Views: ${formattedViewCount}`;
     thumbnailElement.src = thumbnailUrl;
   }
+
+
+
+  // Define your songs data
+const songsData = [
+  { name: "Born To Be", dailyStreams: 177000, currentStreams: 9414087, milestone: 10000000, targetMile:'10M ~ '},
+  { name: "Untouchable", dailyStreams: 330000, currentStreams: 17294293, milestone: 20000000, targetMile:'20M ~ '},
+  { name: "Wannabe", dailyStreams: 170000, currentStreams: 347804995, milestone: 350000000, targetMile:'350M ~ '},
+  { name: "Mr. Vampire", dailyStreams: 130000, currentStreams: 6943865, milestone: 10000000, targetMile:'10M ~ '},
+  { name: "Loco", dailyStreams: 153000, currentStreams: 234307854, milestone: 240000000, targetMile:'240M ~ '},
+  { name: "Marfia in the Morning", dailyStreams: 91000, currentStreams: 195797757, milestone: 200000000, targetMile:'200M ~ '},
+  { name: "Cake", dailyStreams: 160000, currentStreams: 59999877, milestone: 70000000, targetMile:'70M ~ '},
+  { name: "Cheshire", dailyStreams: 98000, currentStreams: 93156607, milestone: 100000000, targetMile:'100M ~ '},
+  { name: "Dalla Dalla", dailyStreams: 85000, currentStreams: 233562311, milestone: 240000000, targetMile:'240M ~ '},
+  { name: "Not Shy", dailyStreams: 99000, currentStreams: 219881332, milestone: 230000000, targetMile:'230M ~ '},
+  
+  
+  // Add more songs data as needed
+];
+
+// Function to format date as yyyy.mm.dd
+function formatDate(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}.${month}.${day}`;
+}
+
+function formatNumberWithCommas(number) {
+  return number.toLocaleString();
+}
+
+// Function to calculate milestone prediction
+function calculatePrediction(dailyStreams, currentStreams, milestone) {
+  const remainingStreams = milestone - currentStreams; // Use milestone as the threshold
+  const daysUntilPrediction = Math.ceil(remainingStreams / dailyStreams);
+  const predictionDate = new Date();
+  predictionDate.setDate(predictionDate.getDate() + daysUntilPrediction);
+  return [formatDate(predictionDate), daysUntilPrediction];
+}
+
+// Function to populate the table
+function populateTable() {
+  const tableBody = document.querySelector("#songTable tbody");
+
+  songsData.forEach(song => {
+    const prediction = calculatePrediction(song.dailyStreams, song.currentStreams, song.milestone);
+    const newRow = `
+      <tr>
+        <td>${song.name}</td>
+        <td>${formatNumberWithCommas(song.dailyStreams)}</td>
+        <td>${formatNumberWithCommas(song.currentStreams)}</td>
+        <td>${song.targetMile}${prediction[0]} (${prediction[1]} days)</td>
+      </tr>
+    `;
+    tableBody.innerHTML += newRow;
+  });
+}
+
+// Call the function to populate the table
+populateTable();
