@@ -89,6 +89,48 @@
     background-image: linear-gradient(to right, rgba(42, 229, 157, 0.767), rgba(12, 155, 238, 0.747));
   }
 
+  /* Styling the table */
+#songTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size:10px;
+}
+
+#songTable th,
+#songTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #749085;
+  color: #fff;
+  font-size: 13px;
+}
+
+#songTable th {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Styling table rows on hover */
+#songTable tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#songTable h1{
+  color: #fff;
+  font-size: 15px;
+  margin: 10px;
+  margin-top: 0;
+}
+
+#songTable td:nth-child(3),
+#songTable td:nth-child(4),
+#songTable td:nth-child(5),
+#songTable th:nth-child(3),
+#songTable th:nth-child(4),
+#songTable th:nth-child(5) {
+  text-align: right;
+}
+
+
 
 
   @media (max-width:576px){
