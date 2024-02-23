@@ -5,24 +5,24 @@ gapi.load('client', () => {
     gapi.client.load('youtube', 'v3', () => {
       // List of video data objects with video IDs, daily views, milestones, and div IDs
       const videos = [
-        { videoId: '0bIRwBpBcZQ', dailyViews: 120000, milestoneViews: 80000000, mainMileViews:100000000, divId: 'video4' , NextMile:'Est. Date for 80M ~ ', NextMileMain:'Est. Date for 100M ~ '},
+        { videoId: '0bIRwBpBcZQ', dailyViews: 110000, milestoneViews: 80000000, mainMileViews:100000000, divId: 'video2' , NextMile:'Est. Date for 80M ~ ', NextMileMain:'Est. Date for 100M ~ '},
         { videoId: 'K0xFPQ2CX5E', dailyViews: 20000, milestoneViews: 15000000, mainMileViews:20000000, divId: 'video10' ,NextMile:'Est. Date for 15M ~ ', NextMileMain:'Est. Date for 20M ~ '},
         { videoId: 'RmTq3cJqyCo', dailyViews: 12000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video17' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
         { videoId: 'FcQ6oB1JPiA', dailyViews: 17000, milestoneViews: 15000000, mainMileViews:50000000, divId: 'video16' ,NextMile:'Est. Date for 15M ~ ', NextMileMain:'Est. Date for 50M ~ '},
-        { videoId: 'fE2h3lGlOsk', dailyViews: 160000, milestoneViews: 540000000, mainMileViews:600000000, divId: 'video7' ,NextMile:'Est. Date for 540M ~ ', NextMileMain:'Est. Date for 600M ~ '},
-        { videoId: 'MjCZfZfucEc', dailyViews: 83000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video8' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
-        { videoId: 'zugAhfd2r0g', dailyViews: 55000, milestoneViews: 150000000, mainMileViews:200000000, divId: 'video2' ,NextMile:'Est. Date for 150M ~ ', NextMileMain:'Est. Date for 200M ~ '},
+        { videoId: 'fE2h3lGlOsk', dailyViews: 110000, milestoneViews: 540000000, mainMileViews:600000000, divId: 'video5' ,NextMile:'Est. Date for 540M ~ ', NextMileMain:'Est. Date for 600M ~ '},
+        { videoId: 'MjCZfZfucEc', dailyViews: 53000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video6' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
+        { videoId: 'zugAhfd2r0g', dailyViews: 51000, milestoneViews: 160000000, mainMileViews:200000000, divId: 'video7' ,NextMile:'Est. Date for 160M ~ ', NextMileMain:'Est. Date for 200M ~ '},
         { videoId: '_ysomCGaZLw', dailyViews: 51000, milestoneViews: 260000000, mainMileViews:300000000, divId: 'video11' ,NextMile:'Est. Date for 260M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: 'wTowEKjDGkU', dailyViews: 27000, milestoneViews: 210000000, mainMileViews:300000000, divId: 'video9' ,NextMile:'Est. Date for 210M ~ ', NextMileMain:'Est. Date for 300M ~ '},
-        { videoId: 'Hbb5GPxXF1w', dailyViews: 37000, milestoneViews: 150000000, mainMileViews:200000000, divId: 'video12' ,NextMile:'Est. Date for 150M ~ ', NextMileMain:'Est. Date for 200M ~ '},
+        { videoId: 'Hbb5GPxXF1w', dailyViews: 30000, milestoneViews: 150000000, mainMileViews:200000000, divId: 'video12' ,NextMile:'Est. Date for 150M ~ ', NextMileMain:'Est. Date for 200M ~ '},
         { videoId: 'pNfTK39k55U', dailyViews: 38000, milestoneViews: 330000000, mainMileViews:400000000, divId: 'video13' ,NextMile:'Est. Date for 330M ~ ', NextMileMain:'Est. Date for 400M ~ '},
         { videoId: 'zndvqTc4P9I', dailyViews: 26000, milestoneViews: 270000000, mainMileViews:300000000, divId: 'video14' ,NextMile:'Est. Date for 270M ~ ', NextMileMain:'Est. Date for 300M ~ '},
-        { videoId: '4R7vRFGJr3k', dailyViews: 150000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video1' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
+        { videoId: '4R7vRFGJr3k', dailyViews: 130000, milestoneViews: 30000000, mainMileViews:50000000, divId: 'video8' ,NextMile:'Est. Date for 30M ~ ', NextMileMain:'Est. Date for 50M ~ '},
         { videoId: 'OSRMoNKftyk', dailyViews: 26000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video15' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
         { videoId: 'z75GlxXEfZk', dailyViews: 18000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video18' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
-        { videoId: 'VkIEfqHFNkU', dailyViews: 84000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video3' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
-        { videoId: '5e3rKInegeU', dailyViews: 180000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video5' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
-        { videoId: 'dnXyghQd2O8', dailyViews: 3000, milestoneViews: 1000000, mainMileViews:10000000, divId: 'video6' ,NextMile:'Est. Date for 1M ~ ', NextMileMain:'Est. Date for 10M ~ '},
+        { videoId: 'VkIEfqHFNkU', dailyViews: 70000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video1' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
+        { videoId: '5e3rKInegeU', dailyViews: 180000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video4' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
+        { videoId: 'dnXyghQd2O8', dailyViews: 2000, milestoneViews: 1000000, mainMileViews:10000000, divId: 'video3' ,NextMile:'Est. Date for 1M ~ ', NextMileMain:'Est. Date for 10M ~ '},
         { videoId: 'HnXCezrJEdM', dailyViews: 20000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video19' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
         { videoId: '1843Q679cvg', dailyViews: 18000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video20' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
 
@@ -102,6 +102,7 @@ gapi.load('client', () => {
 
   // Define your songs data
 const songsData = [
+  { name: "Total Streams", dailyStreams: 2300000, currentStreams: 2426180723, milestone: 2500000000, targetMile:'2.5B ~ '},
   { name: "Born To Be", dailyStreams: 177000, currentStreams: 9414087, milestone: 10000000, targetMile:'10M ~ '},
   { name: "Untouchable", dailyStreams: 330000, currentStreams: 17294293, milestone: 20000000, targetMile:'20M ~ '},
   { name: "Wannabe", dailyStreams: 170000, currentStreams: 347804995, milestone: 350000000, targetMile:'350M ~ '},
