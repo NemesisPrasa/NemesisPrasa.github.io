@@ -1,16 +1,16 @@
 gapi.load('client', () => {
     gapi.client.init({
-      apiKey: 'AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E',
+      apiKey: 'AIzaSyCeLWGedhg5LBMJ7pK8XG4JoOd-FNnuYto',
     });
     gapi.client.load('youtube', 'v3', () => {
       // List of video data objects with video IDs, daily views, milestones, and div IDs
       const videos = [
-        { videoId: '0bIRwBpBcZQ', dailyViews: 110000, milestoneViews: 80000000, mainMileViews:100000000, divId: 'video2' , NextMile:'Est. Date for 80M ~ ', NextMileMain:'Est. Date for 100M ~ '},
+        { videoId: '0bIRwBpBcZQ', dailyViews: 110000, milestoneViews: 90000000, mainMileViews:100000000, divId: 'video5' , NextMile:'Est. Date for 90M ~ ', NextMileMain:'Est. Date for 100M ~ '},
         { videoId: 'K0xFPQ2CX5E', dailyViews: 20000, milestoneViews: 15000000, mainMileViews:20000000, divId: 'video10' ,NextMile:'Est. Date for 15M ~ ', NextMileMain:'Est. Date for 20M ~ '},
         { videoId: 'RmTq3cJqyCo', dailyViews: 12000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video17' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
         { videoId: 'FcQ6oB1JPiA', dailyViews: 17000, milestoneViews: 15000000, mainMileViews:50000000, divId: 'video16' ,NextMile:'Est. Date for 15M ~ ', NextMileMain:'Est. Date for 50M ~ '},
-        { videoId: 'fE2h3lGlOsk', dailyViews: 110000, milestoneViews: 540000000, mainMileViews:600000000, divId: 'video5' ,NextMile:'Est. Date for 540M ~ ', NextMileMain:'Est. Date for 600M ~ '},
-        { videoId: 'MjCZfZfucEc', dailyViews: 53000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video6' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
+        { videoId: 'fE2h3lGlOsk', dailyViews: 110000, milestoneViews: 540000000, mainMileViews:600000000, divId: 'video3' ,NextMile:'Est. Date for 540M ~ ', NextMileMain:'Est. Date for 600M ~ '},
+        { videoId: 'MjCZfZfucEc', dailyViews: 53000, milestoneViews: 250000000, mainMileViews:300000000, divId: 'video4' ,NextMile:'Est. Date for 250M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: 'zugAhfd2r0g', dailyViews: 51000, milestoneViews: 160000000, mainMileViews:200000000, divId: 'video7' ,NextMile:'Est. Date for 160M ~ ', NextMileMain:'Est. Date for 200M ~ '},
         { videoId: '_ysomCGaZLw', dailyViews: 51000, milestoneViews: 260000000, mainMileViews:300000000, divId: 'video11' ,NextMile:'Est. Date for 260M ~ ', NextMileMain:'Est. Date for 300M ~ '},
         { videoId: 'wTowEKjDGkU', dailyViews: 27000, milestoneViews: 210000000, mainMileViews:300000000, divId: 'video9' ,NextMile:'Est. Date for 210M ~ ', NextMileMain:'Est. Date for 300M ~ '},
@@ -20,15 +20,12 @@ gapi.load('client', () => {
         { videoId: '4R7vRFGJr3k', dailyViews: 130000, milestoneViews: 30000000, mainMileViews:50000000, divId: 'video8' ,NextMile:'Est. Date for 30M ~ ', NextMileMain:'Est. Date for 50M ~ '},
         { videoId: 'OSRMoNKftyk', dailyViews: 26000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video15' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
         { videoId: 'z75GlxXEfZk', dailyViews: 18000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video18' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
-        { videoId: 'VkIEfqHFNkU', dailyViews: 70000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video1' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
-        { videoId: '5e3rKInegeU', dailyViews: 180000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video4' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
-        { videoId: 'dnXyghQd2O8', dailyViews: 2000, milestoneViews: 1000000, mainMileViews:10000000, divId: 'video3' ,NextMile:'Est. Date for 1M ~ ', NextMileMain:'Est. Date for 10M ~ '},
+        { videoId: 'VkIEfqHFNkU', dailyViews: 70000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video6' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
+        { videoId: '5e3rKInegeU', dailyViews: 180000, milestoneViews: 20000000, mainMileViews:50000000, divId: 'video2' ,NextMile:'Est. Date for 20M ~ ', NextMileMain:'Est. Date for 50M ~ '},
+        { videoId: 'dnXyghQd2O8', dailyViews: 2000, milestoneViews: 1000000, mainMileViews:10000000, divId: 'video1' ,NextMile:'Est. Date for 1M ~ ', NextMileMain:'Est. Date for 10M ~ '},
         { videoId: 'HnXCezrJEdM', dailyViews: 20000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video19' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
         { videoId: '1843Q679cvg', dailyViews: 18000, milestoneViews: 10000000, mainMileViews:20000000, divId: 'video20' ,NextMile:'Est. Date for 10M ~ ', NextMileMain:'Est. Date for 20M ~ '},
 
-        
-        // Add more video data objects as needed
-        //bet on me 14,817,134	, NOMB 9,261,516
       ];
   
       // Iterate through the list and make API requests for each video
