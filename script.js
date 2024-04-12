@@ -76,7 +76,7 @@ updateCountdown();
 
 gapi.load('client', () => {
   gapi.client.init({
-    apiKey: 'AIzaSyCSxEEH9DjflJ1Czxk_wH6_zQWRlbtmT4E',
+    apiKey: 'AIzaSyCeLWGedhg5LBMJ7pK8XG4JoOd-FNnuYto',
   });
   gapi.client.load('youtube', 'v3', () => {
     // List of video data objects with video IDs, daily views, milestones, and div IDs
